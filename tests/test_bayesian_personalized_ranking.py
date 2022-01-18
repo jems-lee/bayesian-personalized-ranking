@@ -1,6 +1,6 @@
 
-from bayesian_personalized_ranking import main
+from bayesian_personalized_ranking.bpr_sklearn import BPR
 
 
-def test_main():
+def test_BPR():
     pass
