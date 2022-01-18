@@ -25,7 +25,7 @@ setup(
     name='bayesian-personalized-ranking',
     version='0.0.0',
     license='MIT',
-    description='An example package. Generated with cookiecutter-pylibrary.',
+    description='An implementation of the Bayesian Personalized Ranking model for research purposes.',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
@@ -62,17 +62,12 @@ setup(
         # 'Programming Language :: Python :: Implementation :: Stackless',
         'Topic :: Utilities',
     ],
-    project_urls={
-        'Documentation': 'https://bayesian-personalized-ranking.readthedocs.io/',
-        'Changelog': 'https://bayesian-personalized-ranking.readthedocs.io/en/latest/changelog.html',
-        'Issue Tracker': 'https://yes/jems-lee/bayesian-personalized-ranking/issues',
-    },
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
     python_requires='>=3.6',
     install_requires=[
-        # eg: 'aspectlib==1.1.1', 'six>=1.7',
+        'pandas>=1.3.0', 'scikit-learn>=1.0.0', 'numba>=0.55.0'
     ],
     extras_require={
         # eg:
